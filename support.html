@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SurfCast Support</title>
+<meta name="description" content="Help with the SurfCast surf forecast and Apple Watch session app.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg-top: #CDE9F9; --bg-bottom: #FCE7B4; --card: rgba(255,255,255,0.72);
+    --text: #10202E; --muted: #4A5B6A; --accent: #0A6BAF; --line: rgba(10,107,175,0.15);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg-top: #1A1606; --bg-bottom: #0D3D6B; --card: rgba(23,58,94,0.8);
+      --text: #F2F6FA; --muted: #B5C4D2; --accent: #FFC23A; --line: rgba(255,255,255,0.12);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg-top: #1A1606; --bg-bottom: #0D3D6B; --card: rgba(23,58,94,0.8);
+    --text: #F2F6FA; --muted: #B5C4D2; --accent: #FFC23A; --line: rgba(255,255,255,0.12);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; color: var(--text); background: var(--bg-top);
+    background-image: linear-gradient(var(--bg-top), var(--bg-bottom)); background-attachment: fixed;
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  header img { width: 64px; height: 64px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0; }
+  .updated { color: var(--muted); margin: 4px 0 24px; font-size: 15px; }
+  section { background: var(--card); border-radius: 18px; padding: 20px 22px; margin: 16px 0; }
+  h2 { font-size: 20px; margin: 0 0 8px; }
+  p, li { margin: 8px 0; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  a { color: var(--accent); }
+  .summary li { margin: 6px 0; }
+  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 28px; }
+  footer a { margin: 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <h1>SurfCast Support</h1>
+  </header>
+  <p class="updated">Surf forecasts for over 400 breaks, plus Apple Watch session tracking.</p>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions, bugs or ideas? Email <a href="mailto:surfcastsupport@gmail.com">surfcastsupport@gmail.com</a> and include your iPhone and Apple Watch models. I usually reply within a few days.</p>
+  </section>
+
+  <section>
+    <h2>Recording a session</h2>
+    <ul>
+      <li>Open SurfCast on your Apple Watch and tap <strong>Start Surf</strong> before you paddle out. Tap <strong>End</strong> when you're done.</li>
+      <li>Turn on Water Lock yourself (swipe up for Control Center) so water doesn't press buttons.</li>
+      <li>Sessions shorter than 10 minutes aren't saved.</li>
+      <li>The session appears on your iPhone's Sessions tab the next time both devices are nearby with SurfCast open.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Common questions</h2>
+    <p><strong>A session didn't show up on my iPhone.</strong> Open SurfCast on both the watch and the iPhone, keep them close together, and wait a minute.</p>
+    <p><strong>Some waves weren't counted, or something that wasn't a wave was.</strong> Waves are detected from sudden jumps in GPS speed. Short rides in small surf can be missed. Enter the waves you counted on the watch's summary to compare.</p>
+    <p><strong>My session time is shorter than I expected.</strong> If you walked to or from the water before tapping Start or End, SurfCast leaves out the time on land. Tap <strong>Undo</strong> on the session's Time on Land card to see the whole recording.</p>
+    <p><strong>Spots are sorted from the wrong place.</strong> Allow location in Settings → SurfCast → Location. Without it, spots are sorted from Del Mar, California.</p>
+    <p><strong>How do I see the welcome tour again?</strong> On the Nearby tab, tap the flag at the top left, then <strong>Welcome Tour</strong>.</p>
+  </section>
+
+  <section>
+    <h2>SurfCast Pro</h2>
+    <ul>
+      <li>Forecasts are free. Your first 3 watch sessions are free; Pro unlocks unlimited sessions (monthly, yearly or a one-time lifetime purchase).</li>
+      <li>New iPhone or reinstalled the app? On the Sessions tab, tap the crown, then <strong>Restore Purchases</strong>.</li>
+      <li>Cancel a subscription in Settings → your name → Subscriptions, at least 24 hours before it renews.</li>
+      <li>Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Safety</h2>
+    <p>Forecasts and ratings are estimates from weather models and can be wrong. Always check conditions in person and surf within your ability.</p>
+  </section>
+
+  <footer>
+    <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
